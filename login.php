@@ -18,7 +18,8 @@
       if(isset($_GET["error"]))
       {
         require_once 'php/functions.php';
-        echo "<br><div class='alert alert-danger'>" . validateData($_GET["error"]) . "</div>";
+        //echo "<br><div class='alert alert-danger'>" . validateData($_GET["error"]) . "</div>";
+        echo "<br><div class='alert alert-danger'>" . $_GET["error"] . "</div>";
       }
       ?>
       <button class="btn btn-lg btn-primary btn-block" type="submit">立即登陆</button>
